@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🎲 Dice Battle</h1>
+        <p class="subtitle">First player to reach 50 points wins!</p>
+
+        <div class="players">
+            <div class="player active" id="player1">
+                <h2>Player 1</h2>
+                <div class="player-dice" id="dice1">⚄</div>
+                <p>Score</p>
+                <h3 id="score1">0</h3>
+            </div>
+
+            <div class="player" id="player2">
+                <h2>Player 2</h2>
+                <div class="player-dice" id="dice2">⚄</div>
+                <p>Score</p>
+                <h3 id="score2">0</h3>
+            </div>
+        </div>
+
+        <p id="turn">Player 1's turn!</p>
+        <p id="result">Roll the dice to start.</p>
+
+        <div class="buttons">
+            <button id="rollBtn">🎲 Roll Dice</button>
+            <button id="resetBtn" class="reset">Reset Game</button>
+        </div>
+
+        <p class="target">Winning score: 50 points</p>
+    </div>
+
+</body>
+</html>
